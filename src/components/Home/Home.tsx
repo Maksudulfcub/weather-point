@@ -1,9 +1,19 @@
 import { useEffect, useState } from "react"
 import { City } from "../City/City";
 
+export interface CityType {
+    id: string;
+    name: string;
+    country: string;
+    country_flag: string;
+    weather_summary: string;
+    tomorrow_weather: string;
+    local_time: string;
+}
+
 const Home = () => {
 
-    const [cities, setCities] = useState([]);
+    const [cities, setCities] = useState<CityType[]>([]);
 
     useEffect(() => {
         fetch('../../../public/cities.json')

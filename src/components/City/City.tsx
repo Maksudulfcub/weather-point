@@ -1,13 +1,18 @@
+import type { CityType } from "../Home/Home";
 
-export const City = ({ city }) => {
+interface CityProps {
+    city: CityType;
+}
 
-    const { name, country, country_flag,weather_summary,tomorrow_weather,local_time } = city;
+export const City = ({ city }: CityProps) => {
+
+    const { name, country, country_flag, weather_summary, tomorrow_weather, local_time } = city;
 
     return (
         <div>
-            <div className="card bg-blue-200 lg:w-96 shadow-sm mt-10">
+            <div className="card bg-sky-100 hover:bg-sky-200 hover:shadow-2xl lg:w-96 shadow-lg mt-10">
                 <figure>
-                    <img className="p-5"
+                    <img className="p-5 lg:h-[250px] lg:w-[400px]"
                         src={country_flag}
                         alt="country flag" />
                 </figure>
