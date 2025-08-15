@@ -1,0 +1,156 @@
+{
+    "cities": [
+        {
+            "name": "Tokyo",
+            "country": "Japan",
+            "local_time": "2025-08-15T17:00:00+09:00",
+            "weather_summary": "Mostly cloudy, 28°C",
+            "tomorrow_weather": "Partly sunny, 30°C",
+            "country_flag": "https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg"
+        },
+        {
+            "name": "Delhi",
+            "country": "India",
+            "local_time": "2025-08-15T13:30:00+05:30",
+            "weather_summary": "Cloudy, 31°C",
+            "tomorrow_weather": "Thunderstorms, 29°C",
+            "country_flag": "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg"
+        },
+        {
+            "name": "Shanghai",
+            "country": "China",
+            "local_time": "2025-08-15T16:00:00+08:00",
+            "weather_summary": "Cloudy, 30°C",
+            "tomorrow_weather": "Rain, 27°C",
+            "country_flag": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg"
+        },
+        {
+            "name": "São Paulo",
+            "country": "Brazil",
+            "local_time": "2025-08-15T05:00:00-03:00",
+            "weather_summary": "Partly sunny, 11°C",
+            "tomorrow_weather": "Sunny, 15°C",
+            "country_flag": "https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg"
+        },
+        {
+            "name": "Cairo",
+            "country": "Egypt",
+            "local_time": "2025-08-15T11:00:00+02:00",
+            "weather_summary": "Hazy sunshine, 38°C",
+            "tomorrow_weather": "Sunny, 39°C",
+            "country_flag": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg"
+        },
+        {
+            "name": "Mexico City",
+            "country": "Mexico",
+            "local_time": "2025-08-15T04:00:00-06:00",
+            "weather_summary": "Mostly clear, 13°C",
+            "tomorrow_weather": "Sunny, 21°C",
+            "country_flag": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg"
+        },
+        {
+            "name": "Beijing",
+            "country": "China",
+            "local_time": "2025-08-15T16:00:00+08:00",
+            "weather_summary": "Cloudy, 27°C",
+            "tomorrow_weather": "Mostly cloudy, 29°C",
+            "country_flag": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg"
+        },
+        {
+            "name": "Mumbai",
+            "country": "India",
+            "local_time": "2025-08-15T13:30:00+05:30",
+            "weather_summary": "Cloudy, 28°C",
+            "tomorrow_weather": "Thunderstorms, 27°C",
+            "country_flag": "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg"
+        },
+        {
+            "name": "Osaka",
+            "country": "Japan",
+            "local_time": "2025-08-15T17:00:00+09:00",
+            "weather_summary": "Mostly cloudy, 31°C",
+            "tomorrow_weather": "Partly sunny, 33°C",
+            "country_flag": "https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg"
+        },
+        {
+            "name": "Karachi",
+            "country": "Pakistan",
+            "local_time": "2025-08-15T13:00:00+05:00",
+            "weather_summary": "Partly sunny, 35°C",
+            "tomorrow_weather": "Sunny, 36°C",
+            "country_flag": "https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg"
+        },
+        {
+            "name": "Bangkok",
+            "country": "Thailand",
+            "local_time": "2025-08-15T15:00:00+07:00",
+            "weather_summary": "Mostly cloudy, 32°C",
+            "tomorrow_weather": "Scattered showers, 31°C",
+            "country_flag": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg"
+        },
+        {
+            "name": "Manila",
+            "country": "Philippines",
+            "local_time": "2025-08-15T17:00:00+08:00",
+            "weather_summary": "Cloudy, 28°C",
+            "tomorrow_weather": "Rain showers, 27°C",
+            "country_flag": "https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_the_Philippines.svg"
+        },
+        {
+            "name": "Jakarta",
+            "country": "Indonesia",
+            "local_time": "2025-08-15T16:00:00+07:00",
+            "weather_summary": "Partly sunny, 28°C",
+            "tomorrow_weather": "Thunderstorms, 29°C",
+            "country_flag": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg"
+        },
+        {
+            "name": "Ho Chi Minh City",
+            "country": "Vietnam",
+            "local_time": "2025-08-15T15:00:00+07:00",
+            "weather_summary": "Partly sunny, 27°C",
+            "tomorrow_weather": "Cloudy with rain, 26°C",
+            "country_flag": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg"
+        },
+        {
+            "name": "Moscow",
+            "country": "Russia",
+            "local_time": "2025-08-15T10:00:00+03:00",
+            "weather_summary": "Sunny, 22°C",
+            "tomorrow_weather": "Partly cloudy, 23°C",
+            "country_flag": "https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg"
+        },
+        {
+            "name": "Buenos Aires",
+            "country": "Argentina",
+            "local_time": "2025-08-15T06:00:00-03:00",
+            "weather_summary": "Mostly cloudy, 7°C",
+            "tomorrow_weather": "Rain showers, 10°C",
+            "country_flag": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg"
+        },
+        {
+            "name": "Lagos",
+            "country": "Nigeria",
+            "local_time": "2025-08-15T10:00:00+01:00",
+            "weather_summary": "Partly sunny, 26°C",
+            "tomorrow_weather": "Sunny, 27°C",
+            "country_flag": "https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg"
+        },
+        {
+            "name": "London",
+            "country": "United Kingdom",
+            "local_time": "2025-08-15T10:00:00+01:00",
+            "weather_summary": "Sunny, 26°C",
+            "tomorrow_weather": "Mostly sunny, 25°C",
+            "country_flag": "https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg"
+        },
+        {
+            "name": "New York",
+            "country": "United States",
+            "local_time": "2025-08-15T05:00:00-04:00",
+            "weather_summary": "Partly sunny, 24°C",
+            "tomorrow_weather": "Rain and sun, 26°C",
+            "country_flag": "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
+        }
+    ]
+}
