@@ -45,7 +45,7 @@ const WeatherDashboard: React.FC = () => {
 
     return (
         <div className="lg:mt-10">
-            <h1 className="lg:text-2xl font-bold">Find Your City Weather</h1>
+            <h1 className="lg:text-2xl font-semibold">Find Your City & Get Weather Update</h1>
             <form onSubmit={handleSearch} className="mx-auto max-w-md flex flex-col gap-2 mb-6 mt-5">
                 <input
                     type="text"
@@ -56,7 +56,7 @@ const WeatherDashboard: React.FC = () => {
                 />
                 <button
                     type="submit"
-                    className="bg-blue-500 lg:w-[100px] lg:mx-auto text-white px-6 py-2 rounded hover:bg-blue-600 shadow-sm"
+                    className="bg-blue-500 lg:w-[150px] lg:mx-auto text-white px-6 py-2 rounded hover:bg-blue-600 shadow-sm"
                 >
                     Search
                 </button>
