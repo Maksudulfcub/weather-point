@@ -10,7 +10,9 @@ type weatherData = {
         temp_c: number;
         condition: {
             text: string;
-        }
+            icon: string;
+        };
+        feelslike_c: number;
     }
 }
 
@@ -23,7 +25,7 @@ const WeatherDashboard: React.FC = () => {
         e.preventDefault()
 
         if (!city) {
-            return ('City not fount')
+            return ('City not found')
         }
         try {
             setError(null);
@@ -33,27 +35,28 @@ const WeatherDashboard: React.FC = () => {
                 `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`
             );
             setWeather(response.data)
+            setCity('');
         }
         catch {
             setError('CITY NOT FOUND !');
             setWeather(null);
-        } 
+        }
     };
 
     return (
         <div className="lg:mt-10">
-            <h1 className="text-2xl font-bold">Find Your City Weather</h1>
-            <form onSubmit={handleSearch} className="mx-auto max-w-md flex gap-2 mb-6 mt-5">
+            <h1 className="lg:text-2xl font-bold">Find Your City Weather</h1>
+            <form onSubmit={handleSearch} className="mx-auto max-w-md flex flex-col gap-2 mb-6 mt-5">
                 <input
                     type="text"
                     value={city}
                     onChange={(e) => setCity(e.target.value)}
                     placeholder="Enter your city name"
-                    className="flex-1 px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    className="flex-1 px-4 py-2 rounded border border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400"
                 />
                 <button
                     type="submit"
-                    className="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600"
+                    className="bg-blue-500 lg:w-[100px] lg:mx-auto text-white px-6 py-2 rounded hover:bg-blue-600 shadow-sm"
                 >
                     Search
                 </button>
@@ -63,15 +66,16 @@ const WeatherDashboard: React.FC = () => {
 
             {
                 weather && (
-                    <div className="lg:p-5 bg-amber-50 lg:w-2xl rounded-lg shadow-lg border border-amber-400 mx-auto">
+                    <div className="lg:p-5 py-2 bg-amber-50 lg:w-2xl rounded-lg shadow-lg border border-amber-400 mx-auto">
                         <h3 className="text-xl font-semibold">{weather.location.name}</h3>
                         <p className="text-gray-500 font-medium">{weather.location.country}</p>
                         <h2 className="font-bold text-4xl">{weather.current.temp_c} C</h2>
+                        <p className="text-gray-500 text-sm">Feels like {weather.current.feelslike_c} C</p>
+                        <img className="mx-auto" src={weather.current.condition.icon} alt="" />
                         <p className="font-semibold text-gray-600">{weather.current.condition.text}</p>
                     </div>
                 )
             }
-
         </div>
     )
 }
