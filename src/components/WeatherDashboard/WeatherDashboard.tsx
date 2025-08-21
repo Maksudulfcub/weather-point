@@ -13,6 +13,7 @@ type weatherData = {
             icon: string;
         };
         feelslike_c: number;
+        humidity: number;
     }
 }
 
@@ -71,6 +72,7 @@ const WeatherDashboard: React.FC = () => {
                         <p className="text-gray-500 font-medium">{weather.location.country}</p>
                         <h2 className="font-bold text-4xl">{weather.current.temp_c} C</h2>
                         <p className="text-gray-500 text-sm">Feels like {weather.current.feelslike_c} C</p>
+                        <p className="text-gray-500 text-sm">Humidity {weather.current.humidity}</p>
                         <img className="mx-auto" src={weather.current.condition.icon} alt="" />
                         <p className="font-semibold text-gray-600">{weather.current.condition.text}</p>
                     </div>
