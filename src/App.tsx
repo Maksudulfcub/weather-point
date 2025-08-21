@@ -1,21 +1,16 @@
-
 import './App.css'
-import { Footer } from './components/Footer/Footer'
-// import Home from './components/Home/Home'
 import { Navbar } from './components/Navbar/Navbar'
-import { WeatherForecast } from './components/WeatherForcast/WeatherForcast'
+import WeatherDashboard from './components/WeatherDashboard/WeatherDashboard'
 
 function App() {
 
   return (
     <>
       <Navbar></Navbar>
-      <div className='px-10 mx-auto py-10'>
-        {/* <Home></Home> */}
-        <h1 className='text-5xl font-bold text-blue-500'>Weather Forecast of Dhaka</h1>
-        <WeatherForecast></WeatherForecast>
+      <div className='px-10 mx-auto text-center py-10'>
+        <h1 className='lg:text-5xl font-bold text-blue-500'>Weather Forecast</h1>
+        <WeatherDashboard></WeatherDashboard>
       </div>
-      <Footer></Footer>
     </>
   )
 }
